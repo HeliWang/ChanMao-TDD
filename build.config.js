@@ -4,7 +4,7 @@ module.exports = {
 
 	app_files: {
 		//source, but NO specs
-		js: ['src/**/*.js', '!src/**/*.spec.js'],
+		js: ['src/app/**/*.js', '!src/app/**/*.spec.js'],
 
 		//partial templates
 		atpl: ['src/app/**/*.tpl.html'],
@@ -20,5 +20,14 @@ module.exports = {
 			'vendor/ngCordova/dist/ng-cordova.js',
 			'cordova.js'
 		]
+	},
+	ionic:{
+		fonts:[
+			'vendor/ionic/release/fonts/ionicons.eot',
+			'vendor/ionic/release/fonts/ionicons.svg',
+			'vendor/ionic/release/fonts/ionicons.ttf',
+			'vendor/ionic/release/fonts/ionicons.woff'
+		]
+
 	}
 }

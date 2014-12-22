@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="example-app">
 <head>
-	<title>Chan Mao iPad</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+    <% }); %>
+
 </head>
 <body>
 	<script type="text/javascript" src="cordova.js"></script>
@@ -10,6 +17,8 @@
 
 <% }); %>
 	
-	
-<div ui-view></div>
+	<div ui-view></div>
+
+
 </body>
+</html>
